@@ -16,7 +16,7 @@ Built for Code Quest 2026 (AI module). Python 3.12 + FastAPI + SQLite + one plai
 .\test.ps1         # 348+ unit tests, no network, no API calls
 ```
 
-Open the page, click any user in the left sidebar (one click, no passwords), and report a problem. The top bar has **+ New student**, **Reset all data**, **Campus places**, and live AI status.
+Open the page (light/dark theme button in the top bar; `http://127.0.0.1:8000/#u=8&t=mine` preselects a user and tab, handy for demos), click any user in the left sidebar (one click, no passwords), and report a problem. The top bar has **+ New student**, **Reset all data**, **Campus places**, and live AI status.
 
 `.env` keys: `GEMINI_API_KEY`, `GEMINI_API_KEY_2` (two separate free quotas, the chain falls back from one to the other), `GEMINI_MODEL`, `GEMINI_MODEL_2`, `GEMINI_RPM_LIMIT`, `ANTHROPIC_API_KEY` (optional), `LLM_ORDER`, `LLM_TIMEOUT_SECONDS`. Model IDs change often: if `check_ai.py` says MODEL NOT FOUND, edit `.env`; no code change.
 
